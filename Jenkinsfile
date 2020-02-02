@@ -14,7 +14,7 @@ pipeline {
 		stage ('Integration Test') {
 			agent {
 				docker {
-					usage 'ubuntu'
+					image 'ubuntu'
 				}
 			}
 		}
