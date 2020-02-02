@@ -17,6 +17,9 @@ pipeline {
 					image 'ubuntu'
 				}
 			}
+			steps {
+				echo "RRRRRRRRRRRRRRRRRRR"
+			}
 		}
 	}
 }	
