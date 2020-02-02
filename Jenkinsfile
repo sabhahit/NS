@@ -11,6 +11,13 @@ pipeline {
 			echo "This is stage 2"	
 			}
 		}
+		stage ('Integration Test') {
+			agent {
+				docker {
+					usage 'ubuntu'
+				}
+			}
+		}
 	}
 }	
 			
